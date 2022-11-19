@@ -1,0 +1,87 @@
+<div>
+		    <button onClick={load}>Connect</button>
+      <h1>Posts</h1>
+      <ul>
+      {
+        Object.keys(posts).map((post, index) => (
+          <li key={`${posts[index].user}-${index}`}>
+          
+            <h4><b>User: </b>{posts[index].user}</h4>
+            <span><b>Tag: </b>{posts[index].content}</span>
+            <h4></h4>
+            <span><b>Content: </b>{posts[index].tag}</span>
+          </li>
+        ))
+        
+         .main{
+width: auto;
+  height: auto;
+background-image:url(https://phonoteka.org/uploads/posts/2022-09/thumbs/1663766711_3-phonoteka-org-p-kripto-fon-pinterest-3.jpg);
+ }
+ 
+ 
+      }
+      </ul>
+      </div>
+	  
+	  <ul>
+      {
+        Object.keys(posts).map((post, index) => (
+          <li key={`${posts[index].user}-${index}`}>
+          
+            <h4><b>User: </b>{posts[index].user}</h4>
+            <span><b>Content: </b>{posts[index].content}</span>
+            <h4></h4>
+            <span><b>Tag: </b>{posts[index].tag}</span>
+          </li>
+        ))
+        
+   
+      }
+      </ul>
+
+
+	
+<div class="main">
+    <div class="top-block"> 
+        <div class="content"> Подключение к MetaMask</div>
+        <div><button class="btn" onClick={load}>Connect</button></div>
+
+    </div>
+	
+	<div class="search-block"> 
+          <h1 id = "Ptext" style= {{visibility:"hidden"}} >Posts</h1>
+
+        <input style={{visibility:"hidden"}}  id="s" placeholder ="Искать по тегу..." type = "search"/>
+        <button  id ="btn" style={{visibility:"hidden"}} onClick={searchTag}>Поиск</button>
+		<button id="back" style= {{visibility:"hidden"}} onClick={load}>Отменить фильтрацию</button>
+  </div>
+
+        <ul id="list" class = "listP">
+      {
+        Object.keys(posts).map((post, index) => (
+           <li  key={`${posts[index].user}-${index}`}>
+
+        <div class="list_content"> 
+        <div class="user"> 
+              <span class="user1"> User: {posts[index].user} </span>
+        </div>
+
+        <div class = "tag"> 
+              <span class="tag1"> Tag: {posts[index].tag} </span>
+        </div>
+
+        <div class="content_list"> 
+              <span class="content1"> Content: {posts[index].content} </span>
+        </div>
+
+      </div>
+          </li>
+        ))
+
+
+      }
+      </ul>
+
+
+    </div>

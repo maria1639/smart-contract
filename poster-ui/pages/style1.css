@@ -1,0 +1,39 @@
+code css
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    margin-top:100px;
+    margin-left: 400px;
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 25px;
+    
+}
+.content {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 50px;
+    font-weight:bold;
+    
+}
+
+
+.btn{
+    padding:12px 48px;
+    border-radius:50px;
+    margin-top: 50px;
+    cursor: pointer;
+    background-color: rgb(192, 200, 231);
+    border:none;
+    outline: none;
+    min-width: 120px;
+    margin-top: 50px;
+    margin-left: 110px;
+}
+
